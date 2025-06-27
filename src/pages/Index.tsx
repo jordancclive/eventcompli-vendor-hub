@@ -2,7 +2,7 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { CheckCircle, Users, FileText, Shield, Eye, HeartHandshake, ArrowRight, Zap, Clock, TrendingUp } from 'lucide-react';
+import { CheckCircle, Users, FileText, Shield, Eye, HeartHandshake, ArrowRight, Zap, Clock, TrendingUp, Bot } from 'lucide-react';
 
 const Index = () => {
   const features = [
@@ -17,9 +17,9 @@ const Index = () => {
       description: "Securely manage and access all vendor documents in one organized place."
     },
     {
-      icon: Shield,
-      title: "Automated Compliance",
-      description: "Ensure vendors meet requirements with automated checks and notifications."
+      icon: Bot,
+      title: "CompliBot Automation",
+      description: "Our AI-powered CompliBot ensures vendors meet requirements with automated checks and smart notifications."
     },
     {
       icon: Eye,
@@ -28,13 +28,13 @@ const Index = () => {
     },
     {
       icon: TrendingUp,
-      title: "Real-time Tracking",
-      description: "Monitor vendor progress and compliance with insightful dashboards and reports."
+      title: "CompliBot Real-time Tracking",
+      description: "CompliBot monitors vendor progress and compliance with insightful dashboards and reports."
     },
     {
       icon: HeartHandshake,
-      title: "Dedicated Support",
-      description: "Get assistance from our expert team whenever you need it."
+      title: "Dedicated Support + CompliBot",
+      description: "Get assistance from our expert team and your friendly CompliBot companion whenever you need it."
     }
   ];
 
@@ -56,13 +56,13 @@ const Index = () => {
     },
     {
       number: "4",
-      title: "Track Compliance",
-      description: "Monitor document status and compliance in real-time."
+      title: "CompliBot Takes Over",
+      description: "Our cute robot mascot CompliBot automatically checks compliance and sends smart notifications."
     },
     {
       number: "5",
       title: "Approve & Manage",
-      description: "Review submissions, approve vendors, and manage their access effortlessly."
+      description: "Review CompliBot's analysis, approve vendors, and manage their access effortlessly."
     }
   ];
 
@@ -73,19 +73,19 @@ const Index = () => {
       description: "Dramatically reduce the time spent on manual vendor onboarding processes."
     },
     {
-      icon: Clock,
-      title: "Maximize Time Savings",
-      description: "Automate checking of Insurance Documents and renewal requests, freeing up your time to focus on event success."
+      icon: Bot,
+      title: "CompliBot AI Power",
+      description: "Your friendly robot insurance compliance agent automates document checking and renewal requests, freeing up your time."
     },
     {
       icon: Shield,
-      title: "Enhance Compliance & Reduce Risk",
-      description: "Proactively manage vendor compliance and minimize potential liabilities."
+      title: "Enhanced Compliance & Risk Reduction",
+      description: "CompliBot proactively manages vendor compliance and minimizes potential liabilities with intelligent monitoring."
     },
     {
       icon: HeartHandshake,
       title: "Improve Vendor Relationships",
-      description: "Provide a professional and efficient platform for your valued vendors."
+      description: "Provide a professional and efficient platform for your valued vendors, powered by CompliBot's friendly assistance."
     }
   ];
 
@@ -116,18 +116,37 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="text-center lg:text-left">
+              <div className="flex items-center justify-center lg:justify-start mb-6">
+                <div className="flex items-center space-x-3 bg-white/80 backdrop-blur-sm rounded-full px-4 py-2 shadow-lg">
+                  <Bot className="w-6 h-6 text-blue-600" />
+                  <span className="text-blue-600 font-semibold">Powered by CompliBot AI</span>
+                </div>
+              </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
                 Simplify Vendor Management,{" "}
                 <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                   Amplify Your Event
                 </span>
               </h1>
-              <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                A powerful, free platform for organizers to onboard, track, and ensure vendors documents and insurance are all set — effortlessly.
+              <p className="text-xl text-gray-600 mb-6 leading-relaxed">
+                Meet CompliBot, your friendly AI insurance compliance agent! Our powerful, free platform helps organizers onboard, track, and ensure vendor documents and insurance are all set — effortlessly.
               </p>
+              <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-lg p-4 mb-8">
+                <div className="flex items-center space-x-3">
+                  <img 
+                    src="/api/placeholder/64/64" 
+                    alt="CompliBot mascot - cute robot insurance compliance agent" 
+                    className="w-16 h-16 rounded-full"
+                  />
+                  <div>
+                    <p className="text-blue-800 font-medium">👋 Hi! I'm CompliBot, your cute robot compliance assistant!</p>
+                    <p className="text-blue-600 text-sm">I'll handle all the boring compliance checks so you can focus on making amazing events!</p>
+                  </div>
+                </div>
+              </div>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Button size="lg" className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-lg px-8 py-3">
-                  Start Free Today
+                  Meet CompliBot
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
                 <Button size="lg" variant="outline" className="text-lg px-8 py-3 border-2">
@@ -142,13 +161,19 @@ const Index = () => {
                     <div className="w-3 h-3 bg-red-400 rounded-full"></div>
                     <div className="w-3 h-3 bg-yellow-400 rounded-full"></div>
                     <div className="w-3 h-3 bg-green-400 rounded-full"></div>
+                    <div className="ml-auto flex items-center space-x-2">
+                      <Bot className="w-4 h-4 text-blue-500" />
+                      <span className="text-xs text-blue-500 font-medium">CompliBot Active</span>
+                    </div>
                   </div>
                   <div className="space-y-3">
                     <div className="h-4 bg-gray-200 rounded w-3/4"></div>
                     <div className="h-4 bg-gradient-to-r from-blue-200 to-purple-200 rounded w-1/2"></div>
                     <div className="h-4 bg-gray-200 rounded w-2/3"></div>
                     <div className="grid grid-cols-3 gap-2 mt-6">
-                      <div className="h-8 bg-gradient-to-r from-blue-100 to-purple-100 rounded"></div>
+                      <div className="h-8 bg-gradient-to-r from-blue-100 to-purple-100 rounded flex items-center justify-center">
+                        <Bot className="w-4 h-4 text-blue-500" />
+                      </div>
                       <div className="h-8 bg-gradient-to-r from-green-100 to-blue-100 rounded"></div>
                       <div className="h-8 bg-gradient-to-r from-purple-100 to-pink-100 rounded"></div>
                     </div>
@@ -164,11 +189,14 @@ const Index = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Unlock Powerful Features
-            </h2>
+            <div className="flex items-center justify-center mb-4">
+              <Bot className="w-8 h-8 text-blue-600 mr-3" />
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+                CompliBot's Powerful Features
+              </h2>
+            </div>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Everything you need to streamline vendor management and ensure compliance
+              Everything you need to streamline vendor management with your friendly AI compliance assistant
             </p>
           </div>
           
@@ -193,10 +221,10 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              How EventCompli Simplifies Your Workflow
+              How CompliBot Simplifies Your Workflow
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              A streamlined 5-step process to transform your vendor management
+              A streamlined 5-step process with your AI compliance assistant
             </p>
           </div>
 
@@ -205,7 +233,11 @@ const Index = () => {
               <div key={index} className="relative">
                 <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 h-full">
                   <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-500 rounded-xl flex items-center justify-center mb-6 mx-auto">
-                    <span className="text-white font-bold text-lg">{step.number}</span>
+                    {step.number === "4" ? (
+                      <Bot className="w-6 h-6 text-white" />
+                    ) : (
+                      <span className="text-white font-bold text-lg">{step.number}</span>
+                    )}
                   </div>
                   <h3 className="text-lg font-semibold text-gray-900 mb-3 text-center">{step.title}</h3>
                   <p className="text-gray-600 text-center text-sm leading-relaxed">{step.description}</p>
@@ -226,10 +258,10 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              The EventCompli Advantage
+              The CompliBot Advantage
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Experience the benefits that set us apart from traditional vendor management
+              Experience the benefits of having a cute robot insurance compliance agent on your team
             </p>
           </div>
 
@@ -257,15 +289,18 @@ const Index = () => {
       <section className="py-20 bg-gradient-to-r from-blue-600 to-purple-600 relative overflow-hidden">
         <div className="absolute inset-0 bg-black/10"></div>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-            Ready to Elevate Your Event Vendor Management?
-          </h2>
+          <div className="flex items-center justify-center mb-6">
+            <Bot className="w-12 h-12 text-white mr-4" />
+            <h2 className="text-3xl md:text-4xl font-bold text-white">
+              Ready to Meet CompliBot?
+            </h2>
+          </div>
           <p className="text-xl text-blue-100 mb-8 leading-relaxed">
-            No complex pricing. Just a powerful platform to streamline your event vendor processes.
+            Let your friendly AI compliance assistant handle the tedious work while you focus on creating amazing events.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100 text-lg px-8 py-3 font-semibold">
-              Get Started Free
+              Meet CompliBot Free
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
             <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-blue-600 text-lg px-8 py-3">
@@ -284,9 +319,13 @@ const Index = () => {
                 <CheckCircle className="w-5 h-5 text-white" />
               </div>
               <span className="text-2xl font-bold">EventCompli</span>
+              <div className="flex items-center space-x-2 ml-4">
+                <Bot className="w-5 h-5 text-blue-400" />
+                <span className="text-blue-400 text-sm">Powered by CompliBot</span>
+              </div>
             </div>
             <p className="text-gray-400 text-center md:text-right">
-              © 2024 EventCompli. Transforming event vendor management.
+              © 2024 EventCompli. Your friendly AI compliance assistant for events.
             </p>
           </div>
         </div>
