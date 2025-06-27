@@ -90,20 +90,20 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-blue-50">
+    <div className="min-h-screen bg-white">
       {/* Header/Navigation */}
-      <header className="bg-white/80 backdrop-blur-md border-b border-gray-100 sticky top-0 z-50">
+      <header className="bg-white/80 backdrop-blur-md border-b border-gray-200 sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
+              <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
                 <CheckCircle className="w-5 h-5 text-white" />
               </div>
-              <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+              <span className="text-2xl font-bold text-blue-600">
                 EventCompli
               </span>
             </div>
-            <Button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700">
+            <Button className="bg-blue-600 hover:bg-blue-700 text-white">
               Get Started Free
             </Button>
           </div>
@@ -112,26 +112,26 @@ const Index = () => {
 
       {/* Hero Section */}
       <section className="relative py-20 lg:py-32 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-600/10 to-purple-600/10"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-50 to-yellow-50"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="text-center lg:text-left">
               <div className="flex items-center justify-center lg:justify-start mb-6">
-                <div className="flex items-center space-x-3 bg-white/80 backdrop-blur-sm rounded-full px-4 py-2 shadow-lg">
+                <div className="flex items-center space-x-3 bg-white/90 backdrop-blur-sm rounded-full px-4 py-2 shadow-lg border border-blue-100">
                   <Bot className="w-6 h-6 text-blue-600" />
                   <span className="text-blue-600 font-semibold">Powered by CompliBot AI</span>
                 </div>
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
                 Simplify Vendor Management,{" "}
-                <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                <span className="text-blue-600">
                   Amplify Your Event
                 </span>
               </h1>
               <p className="text-xl text-gray-600 mb-6 leading-relaxed">
                 Meet CompliBot, your friendly AI insurance compliance agent! Our powerful, free platform helps organizers onboard, track, and ensure vendor documents and insurance are all set — effortlessly.
               </p>
-              <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-lg p-4 mb-8">
+              <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mb-8">
                 <div className="flex items-center space-x-3">
                   <img 
                     src="/api/placeholder/64/64" 
@@ -145,17 +145,17 @@ const Index = () => {
                 </div>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <Button size="lg" className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-lg px-8 py-3">
+                <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white text-lg px-8 py-3">
                   Meet CompliBot
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
-                <Button size="lg" variant="outline" className="text-lg px-8 py-3 border-2">
+                <Button size="lg" variant="outline" className="text-lg px-8 py-3 border-2 border-blue-600 text-blue-600 hover:bg-blue-50">
                   Watch Demo
                 </Button>
               </div>
             </div>
             <div className="relative">
-              <div className="bg-gradient-to-br from-blue-100 to-purple-100 rounded-2xl p-8 shadow-2xl">
+              <div className="bg-gradient-to-br from-blue-100 to-yellow-100 rounded-2xl p-8 shadow-2xl">
                 <div className="bg-white rounded-xl p-6 shadow-lg">
                   <div className="flex items-center space-x-3 mb-4">
                     <div className="w-3 h-3 bg-red-400 rounded-full"></div>
@@ -168,14 +168,14 @@ const Index = () => {
                   </div>
                   <div className="space-y-3">
                     <div className="h-4 bg-gray-200 rounded w-3/4"></div>
-                    <div className="h-4 bg-gradient-to-r from-blue-200 to-purple-200 rounded w-1/2"></div>
+                    <div className="h-4 bg-gradient-to-r from-blue-200 to-yellow-200 rounded w-1/2"></div>
                     <div className="h-4 bg-gray-200 rounded w-2/3"></div>
                     <div className="grid grid-cols-3 gap-2 mt-6">
-                      <div className="h-8 bg-gradient-to-r from-blue-100 to-purple-100 rounded flex items-center justify-center">
+                      <div className="h-8 bg-gradient-to-r from-blue-100 to-yellow-100 rounded flex items-center justify-center">
                         <Bot className="w-4 h-4 text-blue-500" />
                       </div>
-                      <div className="h-8 bg-gradient-to-r from-green-100 to-blue-100 rounded"></div>
-                      <div className="h-8 bg-gradient-to-r from-purple-100 to-pink-100 rounded"></div>
+                      <div className="h-8 bg-blue-100 rounded"></div>
+                      <div className="h-8 bg-yellow-100 rounded"></div>
                     </div>
                   </div>
                 </div>
@@ -204,7 +204,7 @@ const Index = () => {
             {features.map((feature, index) => (
               <Card key={index} className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-0 shadow-lg">
                 <CardContent className="p-8 text-center">
-                  <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <div className="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                     <feature.icon className="w-8 h-8 text-white" />
                   </div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-4">{feature.title}</h3>
@@ -217,7 +217,7 @@ const Index = () => {
       </section>
 
       {/* How It Works Section */}
-      <section className="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
+      <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -232,7 +232,7 @@ const Index = () => {
             {steps.map((step, index) => (
               <div key={index} className="relative">
                 <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 h-full">
-                  <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-500 rounded-xl flex items-center justify-center mb-6 mx-auto">
+                  <div className="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center mb-6 mx-auto">
                     {step.number === "4" ? (
                       <Bot className="w-6 h-6 text-white" />
                     ) : (
@@ -270,7 +270,7 @@ const Index = () => {
               <Card key={index} className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg">
                 <CardContent className="p-8">
                   <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-500 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                    <div className="w-12 h-12 bg-yellow-500 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
                       <advantage.icon className="w-6 h-6 text-white" />
                     </div>
                     <div>
@@ -286,7 +286,7 @@ const Index = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-purple-600 relative overflow-hidden">
+      <section className="py-20 bg-blue-600 relative overflow-hidden">
         <div className="absolute inset-0 bg-black/10"></div>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative">
           <div className="flex items-center justify-center mb-6">
@@ -303,7 +303,7 @@ const Index = () => {
               Meet CompliBot Free
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
-            <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-blue-600 text-lg px-8 py-3">
+            <Button size="lg" className="bg-yellow-500 text-white hover:bg-yellow-600 text-lg px-8 py-3 border-2 border-yellow-500">
               Contact Sales
             </Button>
           </div>
@@ -315,13 +315,13 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center space-x-2 mb-4 md:mb-0">
-              <div className="w-8 h-8 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
+              <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
                 <CheckCircle className="w-5 h-5 text-white" />
               </div>
               <span className="text-2xl font-bold">EventCompli</span>
               <div className="flex items-center space-x-2 ml-4">
-                <Bot className="w-5 h-5 text-blue-400" />
-                <span className="text-blue-400 text-sm">Powered by CompliBot</span>
+                <Bot className="w-5 h-5 text-yellow-400" />
+                <span className="text-yellow-400 text-sm">Powered by CompliBot</span>
               </div>
             </div>
             <p className="text-gray-400 text-center md:text-right">
